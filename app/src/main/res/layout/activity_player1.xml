@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player12">
+
+
+    <TextView
+        android:id="@+id/tv_rounds"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Number of\nRounds"
+        android:textColor="#0A1A71"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_rounds"
+        android:layout_below="@id/tv_rounds"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter number here"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_humanChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="219dp"
+        android:text="Your Choice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0000FF"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_computerChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:text="Computer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0000FF"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="551dp"
+        android:text="Score: You 0    Computer: 0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0000FF"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/b_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginBottom="237dp"
+        android:background="#9F3FB5"
+        android:text="Rock"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/b_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="237dp"
+        android:layout_toStartOf="@+id/b_scissors"
+        android:layout_toLeftOf="@+id/b_scissors"
+        android:layout_toEndOf="@+id/b_rock"
+        android:layout_toRightOf="@+id/b_rock"
+        android:background="#9F3FB5"
+        android:text="Paper"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/b_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="238dp"
+        android:background="#9F3FB5"
+        android:text="Scissors"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_game"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_HumanChoice"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="290dp"
+        app:srcCompat="@drawable/rock"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_ComputerChoice"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:srcCompat="@drawable/paper"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:textSize="75dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:background="#9F3FB5"
+        android:text="next"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_start1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:background="#9F3FB5"
+        android:textColor="#FFFFFF"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="235dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible" />
+</RelativeLayout>
